@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     print("\nImpact analysis successfully completed.")
 
-    print("\n--- Einflussstärke der Parameter auf das Überschuldungsrisiko ---")
+    print("\n--- Strength of influencing factors on the risk of over-indebtedness ---")
     print(importances)
 
     # Save results
