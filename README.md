@@ -1,4 +1,4 @@
-# Monte Carlo simulation for the development of compulsive buying and debt (1995–2025)
+# Monte-Carlo simulation for the development of compulsive buying and debt (1995–2025)
 
 ## Project description
 
@@ -8,7 +8,7 @@ The simulation is based on **fictitious but plausible assumptions** and is not i
 
 ---
 
-## questions
+## Questions
 
 ### questions 1 
 
@@ -27,28 +27,27 @@ The simulation is based on **fictitious but plausible assumptions** and is not i
 ## Project structure
 
 ```
-Test_finish/
-├── src/
-│   ├── simulation.py        # Monte-Carlo-simulation
-│   ├── impact_analysis.py   # impact_analysis
-│   └── start.py             # Central execution
-│
+Simtools_final_project/
 ├── data/
 │   └── results/
-│       ├── simualtion.rohdaten_alle_runs.csv
-│       ├── zeitreihe_kennzahlen_1995_2025.csv
-│       └── einflussfaktoren_ueberschuldung.csv
+│       ├── factors_influencing_over-indebtedness.csv
+│       ├── simulation_raw_data_all_runs.csv
+│       └── time_series_key_figures_1995_2025.csv
+├── src/
+│   ├── impact_analysis.py    # question 1
+│   ├── run.py                # Central execution
+│   └── simulation.py         # question 2
 │
 ├── notebook/
-│   └── auswerung_kaufsucht_schulden_neu.ipynb
+│   └── evaluation_shopping_addiction_debts.ipynb
 │
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## methodology
+## Methodology
 
 * Simulation of a population of 1,000 individuals per year
 * Period: 1995–2025
@@ -63,7 +62,7 @@ Test_finish/
 
 The results of all runs are aggregated and stored as a time series.
 
-### impact analysis
+### Impact analysis
 
 * Separate synthetic data generation
 * Random forest classifier
@@ -102,7 +101,7 @@ These results are displayed graphically and interpreted in the notebook.
 
 ---
 
-## use 
+## Use 
 
 1. Install dependencies:
 
@@ -113,13 +112,13 @@ pip install -r requirements.txt
 2. Perform simulations and analyses:
 
 ```bash
-python src/start.py
+python src/run.py
 ```
 
 3. Analyze results:
 
 * CSV files under `data/results/`
-* Visualization in the notebook `notebooks/auswertung_kaufsucht_schulden.ipynb`
+* Visualization in the notebook `notebook/evaluation_shopping_addiction_debts.ipynb`
 
 ---
 
@@ -133,4 +132,4 @@ python src/start.py
 
 ## Conclusion
 
-The project demonstrates how Monte Carlo simulations and influence analyses can be combined to examine complex socioeconomic issues in a structured manner.
+The project demonstrates how Monte-Carlo simulations and influence analyses can be combined to examine complex socioeconomic issues in a structured manner.
