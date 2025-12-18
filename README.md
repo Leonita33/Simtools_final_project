@@ -42,6 +42,7 @@ Simtools_final_project/
 │   ├── run.py                # Central execution
 │   └── simulation.py         # question 2
 │
+├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
