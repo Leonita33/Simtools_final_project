@@ -35,7 +35,7 @@ Simtools_final_project/
 │       └── time_series_key_figures_1995_2025.csv
 |
 ├── notebook/
-│   └── evaluation_shopping_addiction_debts.ipynb
+│   └── evaluation_shopping_addiction_debt.ipynb
 |
 ├── src/
 │   ├── impact_analysis.py    # question 1
