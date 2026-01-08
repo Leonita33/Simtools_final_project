@@ -54,7 +54,7 @@ def run_simulation(
     for run in range(runs):
         np.random.seed(42 + run)
 
-        # Eigenschaften der Individuen 
+        # Characteristics of individuals 
         impulsivity = np.random.normal(0.0, 0.7, population)
         selfcontrol = np.random.normal(0.0, 0.7, population)
         debts = np.zeros(population)
